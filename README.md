@@ -46,7 +46,6 @@ select different angles to view the cube from. Which two faces are missing?
 > because the cube mesh is *generated* upon starting the scene. This is done
 > inside the `GenerateCube.cs` component, which you'll modify shortly.
 
-
 #### 2. Turn on culling
 
 Open `VertexColorShader.shader`, remove the code `Cull Off`, and save the file.
@@ -74,7 +73,7 @@ upward facing square pyramid. The tip of the pyramid should be located at
 This will be very similar logically to the cube generator script, so you are
 welcome to use it as a template. 
 
-> [!NOTE]
+> [!IMPORTANT]
 > Writing the new component alone is not sufficient to render the pyramid. You
 > also need to attach it to a new game object with two other built-in
 > components:
@@ -152,7 +151,9 @@ object is not necessary at all!
 
 > [!NOTE] 
 > A model can consist of more than just a mesh -- for example, surface
-> properties (materials) and animations can be included.
+> properties (materials) and animations can be included. How these are
+> represented in Unity depends on the file format and the respective Unity
+> importer settings.
 
 As a final extension exercise, search the web for some models and try to
 [import them](https://docs.unity3d.com/Manual/ImportingModelFiles.html) into
