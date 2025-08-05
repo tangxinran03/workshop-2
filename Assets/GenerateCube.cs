@@ -38,28 +38,28 @@ public class GenerateCube : MonoBehaviour
         mesh.SetVertices(new[]
         {
             // Top face
-            new Vector3(-1.0f, 1.0f, -1.0f),
-            new Vector3(-1.0f, 1.0f, 1.0f),
-            new Vector3(1.0f, 1.0f, 1.0f),
-            
-            new Vector3(-1.0f, 1.0f, -1.0f),
-            new Vector3(1.0f, 1.0f, 1.0f),
-            new Vector3(1.0f, 1.0f, -1.0f),
+            new Vector3(-1.0f, 1.0f, -1.0f),  //c
+            new Vector3(-1.0f, 1.0f, 1.0f), //a
+            new Vector3(1.0f, 1.0f, 1.0f),  //b
+
+            new Vector3(-1.0f, 1.0f, -1.0f),    //c
+            new Vector3(1.0f, 1.0f, 1.0f),  //b
+            new Vector3(1.0f, 1.0f, -1.0f), //d
 
             // Bottom face
-            new Vector3(-1.0f, -1.0f, -1.0f),
-            new Vector3(1.0f, -1.0f, 1.0f),
-            new Vector3(-1.0f, -1.0f, 1.0f),
-            
-            new Vector3(-1.0f, -1.0f, -1.0f),
-            new Vector3(1.0f, -1.0f, -1.0f),
-            new Vector3(1.0f, -1.0f, 1.0f),
+            new Vector3(-1.0f, -1.0f, -1.0f),   //g
+            new Vector3(1.0f, -1.0f, 1.0f),     //f
+            new Vector3(-1.0f, -1.0f, 1.0f),    //e
+
+            new Vector3(-1.0f, -1.0f, -1.0f),   //g
+            new Vector3(1.0f, -1.0f, -1.0f),    //h
+            new Vector3(1.0f, -1.0f, 1.0f), //f
 
             // Left face
             new Vector3(-1.0f, -1.0f, -1.0f),
             new Vector3(-1.0f, -1.0f, 1.0f),
             new Vector3(-1.0f, 1.0f, 1.0f),
-            
+
             new Vector3(-1.0f, -1.0f, -1.0f),
             new Vector3(-1.0f, 1.0f, 1.0f),
             new Vector3(-1.0f, 1.0f, -1.0f),
@@ -68,12 +68,32 @@ public class GenerateCube : MonoBehaviour
             new Vector3(1.0f, -1.0f, -1.0f),
             new Vector3(1.0f, 1.0f, 1.0f),
             new Vector3(1.0f, -1.0f, 1.0f),
-            
+
             new Vector3(1.0f, -1.0f, -1.0f),
             new Vector3(1.0f, 1.0f, -1.0f),
-            new Vector3(1.0f, 1.0f, 1.0f)
+            new Vector3(1.0f, 1.0f, 1.0f),
 
             // Define more vertices here!
+
+            // Front face
+            new Vector3(-1.0f, 1.0f, 1.0f), //a
+            new Vector3(1.0f, -1.0f, 1.0f),     //f
+            new Vector3(-1.0f, -1.0f, 1.0f),    //e
+
+            new Vector3(-1.0f, 1.0f, 1.0f), //a
+            new Vector3(1.0f, 1.0f, 1.0f),  //b
+            new Vector3(1.0f, -1.0f, 1.0f),     //f
+
+            // Back face
+            new Vector3(-1.0f, 1.0f, -1.0f),    //c
+            new Vector3(1.0f, 1.0f, -1.0f), //d
+            new Vector3(-1.0f, -1.0f, -1.0f),   //g
+
+
+            new Vector3(1.0f, 1.0f, -1.0f), //d
+            new Vector3(-1.0f, -1.0f, -1.0f),   //g
+            new Vector3(1.0f, -1.0f, -1.0f),    //h
+        
         });
 
         // Step 2: Define the vertex colours. There is a one-to-one index
