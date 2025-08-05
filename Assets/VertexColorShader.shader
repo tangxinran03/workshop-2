@@ -6,7 +6,6 @@ Shader "Unlit/VertexColorShader"
 	{
 		Pass
 		{
-			
 
 			CGPROGRAM
 			#pragma vertex vert
